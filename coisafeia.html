@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Imagens</title>
+
+    <style>
+        body {
+            background: #EAF0F6;
+            font-family: Arial, sans-serif;
+            color: #172B45;
+            margin: 0;
+            padding: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #17365D;
+        }
+
+        .descricao {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .cartao {
+            background: white;
+            width: 280px;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 10px #00000020;
+        }
+
+       
+        .foto {
+            width: 100%;
+            height: 220px; 
+            object-fit: contain; 
+            border-radius: 8px;
+            background: #f0f0f0;
+        }
+
+       
+        .icone {
+            width: 250px; 
+            height: 250px;
+            object-fit: contain;
+        }
+
+       
+        .area-png {
+            background: yellow; 
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 140px;
+        }
+
+        .ilustracao {
+            width: 180px; 
+            height: auto;
+            object-fit: contain;
+        }
+
+        
+        .animacao {
+            width: 180px; 
+            height: auto;
+            object-fit: contain;
+        }
+
+        p {
+            color: #52657D;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Laboratório de Imagens para Web</h1>
+
+    <p class="descricao">
+        Conhecendo e aplicando diferentes formatos de imagens
+    </p>
+
+    <div class="galeria">
+
+        <!-- PARTE 1: JPEG -->
+        <div class="cartao">
+            <h2>Fotografia</h2>
+
+            <img src="jpegatvclarice.jpg" width="180px" alt="Fotografia de um ambiente de trabalho">
+
+            <h3>Formato JPEG</h3>
+
+            <p>
+                Utilizado principalmente em fotografias.
+            </p>
+        </div>
+
+        <!-- PARTE 2: SVG -->
+        <div class="cartao">
+            <h2>Ícone</h2>
+
+            <img src="genetic-algorithm-svgrepo-com.svg" width= "180px" alt="">
+
+            <h3>Formato SVG</h3>
+
+            <p>
+                Imagem vetorial que pode ser ampliada
+                sem perder a qualidade.
+            </p>
+        </div>
+
+        <!-- PARTE 3: PNG -->
+        <div class="cartao">
+            <h2>Ilustração</h2>
+
+            <div class="area-png">
+                <img src="pngfotoboroletea.jpg" width="180px" class="ilustracao"
+                     alt="Ilustração com transparência">
+            </div>
+
+            <h3>Formato PNG</h3>
+
+            <p>
+                Pode apresentar fundo transparente.
+            </p>
+        </div>
+
+        <!-- PARTE 4: GIF -->
+        <div class="cartao">
+            <h2>Animação</h2>
+
+            <img src="giphydbz.gif" width="180px" alt="">
+            <h3>Formato GIF</h3>
+
+            <p>
+                Permite apresentar pequenas animações.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<p></p> <br> <br>
+atv: JPEG (Fotografia): Ideal para fotos e imagens complexas com muitas cores. No exercício, ajustamos a altura para 220px e a propriedade object-fit: contain para exibir a imagem inteira sem cortes indesejados.
+
+SVG (Ícone Vetorial): Feito de códigos matemáticos (vetores). Conforme aumentamos o tamanho para 250px, o ícone não perdeu qualidade nem definição, provando ser perfeito para logotipos e ícones responsivos.
+
+PNG (Transparência): Excelente para ilustrações e ícones com fundo transparente. Ao mudar o fundo do container .area-png para amarelo e a largura para 180px, a imagem integrou-se perfeitamente ao fundo sem aquelas bordas brancas incômodas.
+
+GIF (Animação): Diferencia-se por suportar sequências de quadros em loop. Ao definir a largura para 180px, a animação de carregamento reproduziu-se de forma fluida no navegador.
